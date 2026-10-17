@@ -1,0 +1,5 @@
+target,cohort,n,flagged,flagged_fraction,max_abs_z
+FLT3-ITD,beataml_heldout,88,3,0.03409090909090909,6.2246294
+FLT3-ITD,tcga_external,151,19,0.12582781456953643,6.5407486
+NPM1,beataml_heldout,89,1,0.011235955056179775,5.0526257
+NPM1,tcga_external,151,1,0.006622516556291391,5.3966527

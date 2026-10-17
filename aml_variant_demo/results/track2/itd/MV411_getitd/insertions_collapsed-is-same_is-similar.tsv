@@ -1,0 +1,19 @@
+sample	length	start	vaf	ar	coverage	counts	trailing	seq	sense	domains	start_chr13_bp	start_transcript_bp	start_protein_as	end_chr13_bp	end_transcript_bp	end_protein_as	insertion_site_chr13_bp	insertion_site_transcript_bp	insertion_site_protein_as	insertion_site_domain	file	counts_unique_each	counts_unique_total
+MV411	9	69	9.0909	0.1	11	1	False	ATATGATCA	{-1}	['exon14_JMD_switchMotif']	28034147	1772	591	28034147	1772	591	28034146	1773	591	exon14_JMD_switchMotif	['needle_1.txt']	[1]	1
+MV411	9	98	7.6923	0.083333	26	2	False	ACGTTGATT	{1, -1}	['exon14_JMD_zipperMotif']	28034118	1801	601	28034118	1801	601	28034117	1802	601	exon14_JMD_zipperMotif	['needle_65.txt', 'needle_54.txt']	[1, 1]	2
+MV411	15	1	11.765	0.13334	17	2	True	CATTTCATCTCTGAA	{1, -1}	['intron13_spliceAcceptor', 'exon14']	28034215	.	.	28034215	.	.	28034214	1705	569	exon14	['needle_31.txt', 'needle_23.txt']	[1, 1]	2
+MV411	15	98	7.6923	0.083333	13	1	False	ACGTTGATTTCAGAG	{-1}	['exon14_JMD_zipperMotif']	28034118	1801	601	28034118	1801	601	28034117	1802	601	exon14_JMD_zipperMotif	['needle_35.txt']	[1]	1
+MV411	21	273	11.111	0.12500	9	1	False	AGACGTGTGCTCTTCCGATCT	{-1}	['exon15_TKD1_beta2sheet']	28033943	1886	629	28033943	1886	629	28033942	1887	629	exon15_TKD1_beta2sheet	['needle_51.txt']	[1]	1
+MV411	22	1	20.0	0.25	5	1	True	GACTCATCATTTCATCTCTGAA	{-1}	['intron13_spliceAcceptor', 'exon14']	28034215	.	.	28034215	.	.	28034214	1705	569	exon14	['needle_40.txt']	[1]	1
+MV411	27	1	8.3333	0.090908	12	1	False	TAACTGACTCATCATTTCATCTCTGAA	{1}	['intron13_spliceAcceptor', 'exon14']	28034215	.	.	28034215	.	.	28034214	1705	569	exon14	['needle_57.txt']	[1]	1
+MV411	27	330	14.286	0.16667	7	1	True	TACAGTATAGTGGAAGGACAGCAACAA	{1}	[]	28033886	.	.	28033886	.	.	28033885	.	.	intron15_spliceDonor	['needle_55.txt']	[1]	1
+MV411	30	98	23.077	0.30000	26	6	False	ACGTTGATTTCAGAGAATATGAATATGATC	{1, -1}	['exon14_JMD_zipperMotif']	28034118	1801	601	28034118	1801	601	28034117	1802	601	exon14_JMD_zipperMotif	['needle_68.txt', 'needle_63.txt', 'needle_58.txt', 'needle_38.txt', 'needle_17.txt', 'needle_11.txt']	[1, 1, 1, 1, 1, 1]	6
+MV411	33	1	20.0	0.25	5	1	True	GTGTGCTCTTCCGATCTTCATTTCATCTCTGAA	{-1}	['intron13_spliceAcceptor', 'exon14']	28034215	.	.	28034215	.	.	28034214	1705	569	exon14	['needle_14.txt']	[1]	1
+MV411	36	1	16.667	0.20000	12	2	False	GCCTATTCCTAACTGACTCATCATTTCATCTCTGAA	{1}	['intron13_spliceAcceptor', 'exon14']	28034215	.	.	28034215	.	.	28034214	1705	569	exon14	['needle_50.txt']	[2]	1
+MV411	36	330	15.385	0.18182	13	2	True	TACAGTATAGTGGAAGGACAGCAACAAAGATGCCCA	{1, -1}	[]	28033886	.	.	28033886	.	.	28033885	.	.	intron15_spliceDonor	['needle_71.txt', 'needle_45.txt']	[1, 1]	2
+MV411	41	330	14.286	0.16667	7	1	True	TACAGTATAGTGGAAGGACAGCAACAAAGATGCCCAAAAAT	{1}	[]	28033886	.	.	28033886	.	.	28033885	.	.	intron15_spliceDonor	['needle_16.txt']	[1]	1
+MV411	43	330	14.286	0.16667	7	1	True	TACAGTATAGTGGAAGGACAGCAACAAAGATGCCCAAAAATGG	{1}	[]	28033886	.	.	28033886	.	.	28033885	.	.	intron15_spliceDonor	['needle_39.txt']	[1]	1
+MV411	45	330	14.286	0.16667	7	1	True	TACAGTATAGTGGAAGGACAGCAACAAAGATGCCCAAAAATGGGA	{1}	[]	28033886	.	.	28033886	.	.	28033885	.	.	intron15_spliceDonor	['needle_59.txt']	[1]	1
+MV411	54	1	20.0	0.25	5	1	True	TCCTCTATCTGCAGAACTGCCTATTCCTAACTGACTCATCATTTCATCTCTGAA	{-1}	['intron13_spliceAcceptor', 'exon14']	28034215	.	.	28034215	.	.	28034214	1705	569	exon14	['needle_15.txt']	[1]	1
+MV411	58	330	14.286	0.16667	7	1	True	TACAGTATAGTGGAAGGACAGCAACAAAGATGCCCAAAAATGGGAGGCACAGTTTCCC	{1}	[]	28033886	.	.	28033886	.	.	28033885	.	.	intron15_spliceDonor	['needle_0.txt']	[1]	1
+MV411	60	1	8.3333	0.090908	12	1	False	ATTCTTTCCTCTATCTGCAGAACTGCCTATTCCTAACTGACTCATCATTTCATCTCTGAA	{1}	['intron13_spliceAcceptor', 'exon14']	28034215	.	.	28034215	.	.	28034214	1705	569	exon14	['needle_24.txt']	[1]	1

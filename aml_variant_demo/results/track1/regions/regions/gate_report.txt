@@ -1,0 +1,11 @@
+Configured minimum combined truth variants: 200
+IMPACT source symbols: 469
+IMPACT symbols found in GENCODE v50: 469
+IMPACT symbols missing from GENCODE v50: 0
+Raw IMPACT exon records: 113065
+IMPACT gate: SNV=44, INDEL=1, combined=45
+Gate decision: WIDEN
+Final region: all GENCODE v50 basic protein-coding high-confidence exons
+Final BED: intervals=225074, bases=96549992
+Final truth: SNV=1405, INDEL=51, combined=1456
+All-exon raw records parsed when widening: 2838102

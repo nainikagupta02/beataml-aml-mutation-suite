@@ -1,0 +1,8 @@
+step	samples	wall_time	peak_rss_mib	output_disk_mib	note
+remote_DNA_slice	MV4-11;KASUMI-1	6.4 s;6.9 s	9.1	0.27	RSS from representative replay; runtime from corrected Nextflow trace
+remote_RNA_slice_and_FASTQ	KASUMI-1;NB-4	9.1 s;5.8 s	12.8	10.72	RSS from representative replay; runtime from corrected Nextflow trace
+getITD	MV4-11;KASUMI-1	10.1 s;7.0 s	74.0	0.41	Peak measured in a fresh representative child process
+kallisto_quant_full_index	KASUMI-1;NB-4	42.6 s;46.1 s	7621.9	0.72	Peak measured in a fresh NB-4 run; corrected full GENCODE v50 index is 4.84 GiB
+pizzly_filter	KASUMI-1;NB-4	54.0 s;53.4 s	2711.2	0.75	Peak measured with the full-reference cache; both preregistered fusions retained
+report	all	0.18 s	NA	0.01	Nextflow macOS executor does not emit task RSS
+one_time_corrected_index_build	NA	681.04 s	NA	4958.3	Full index built from pipe-corrected GENCODE FASTA; peak RSS was not captured

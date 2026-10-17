@@ -1,0 +1,22 @@
+{
+  "FLT3-ITD": {
+    "model": "elastic_net",
+    "params": {
+      "model__C": 0.05
+    },
+    "threshold": 0.5,
+    "test_n": 88,
+    "development_n": 357,
+    "CV_AUPRC": 0.8604169710218608
+  },
+  "NPM1": {
+    "model": "elastic_net",
+    "params": {
+      "model__C": 0.05
+    },
+    "threshold": 0.5,
+    "test_n": 89,
+    "development_n": 356,
+    "CV_AUPRC": 0.9701642743126621
+  }
+}

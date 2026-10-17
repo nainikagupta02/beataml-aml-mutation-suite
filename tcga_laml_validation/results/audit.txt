@@ -1,0 +1,4 @@
+All 58 original BEAT-AML files are unchanged; no files added or removed.
+FLT3-ITD: patient labels, prediction threshold, metrics and coefficient coverage reconcile; 5000 valid bootstrap replicates.
+NPM1: patient labels, prediction threshold, metrics and coefficient coverage reconcile; 5000 valid bootstrap replicates.
+Prepared inputs, protocol and saved predictions retain their original SHA256 hashes.

@@ -1,0 +1,32 @@
+BEAT-AML (training cohort, n=445) vs TCGA-LAML (external, n=151) gene-expression drift
+Natural log1p(CPM) space; same frozen LogCPM transform used for training and external inference.
+
+46973/51016 genes present in both cohorts by Ensembl stable ID; 15813 of those (33.7%) have |standardized mean difference| > 1.0.
+
+FLT3-ITD: average TCGA-driven shift in the frozen logit = -0.437 (from gene-distribution shift alone, frozen coefficients/threshold unchanged).
+  BEAT-AML held-out AUROC 0.879 -> TCGA AUROC 0.873; Brier 0.076 -> 0.095.
+  Top 5 selected genes by |contribution to the shift|:
+        stable_id display_label  coefficient  standardized_tcga_mean  logit_contribution
+  ENSG00000155657           TTN    -0.082775                3.431855           -0.284070
+  ENSG00000198838          RYR3    -0.088641                1.753945           -0.155472
+  ENSG00000188343       FAM92A1     0.077655                1.418756            0.110174
+  ENSG00000164849        GPR146     0.108178               -0.787241           -0.085162
+  ENSG00000223722 RP11-467L13.5    -0.057035               -1.407880            0.080298
+
+NPM1: average TCGA-driven shift in the frozen logit = -0.276 (from gene-distribution shift alone, frozen coefficients/threshold unchanged).
+  BEAT-AML held-out AUROC 0.999 -> TCGA AUROC 0.964; Brier 0.026 -> 0.039.
+  Top 5 selected genes by |contribution to the shift|:
+        stable_id display_label  coefficient  standardized_tcga_mean  logit_contribution
+  ENSG00000171246         NPTX1     0.260279                0.254594            0.066265
+  ENSG00000223749      MIR503HG    -0.110227                0.498752           -0.054976
+  ENSG00000064393         HIPK2     0.137768                0.372031            0.051254
+  ENSG00000078804      TP53INP2     0.076937               -0.613133           -0.047172
+  ENSG00000132386      SERPINF1    -0.067960                0.671233           -0.045617
+
+Interpretation: standardized mean difference and the KS test are descriptive, not causal;
+they cannot separate sequencing/annotation-pipeline differences from real population shift.
+The logit-shift decomposition assumes the frozen coefficients remain valid out-of-cohort;
+it explains average bias in the linear predictor, not per-patient calibration.
+Genes absent from TCGA contribute exactly 0 here, matching the frozen external-inference rule;
+that rule hides their drift rather than resolving it (see tcga_laml_validation coverage CSVs).
+This is descriptive monitoring, not a recalibration, domain-adaptation or retraining procedure.

@@ -1,0 +1,191 @@
+FLT3-ITD: selected elastic_net; held-out AUROC 0.879, AUPRC 0.851, sensitivity 0.722, specificity 0.971, Brier 0.076.
+NPM1: selected elastic_net; held-out AUROC 0.999, AUPRC 0.997, sensitivity 0.960, specificity 1.000, Brier 0.026.
+
+All thresholds were fixed at 0.50 before fitting. AUPRC means average precision.
+Test results are from one locked evaluation per target. Other models were not tested.
+CV entries below are mean +/- sample SD over 15 grouped folds (5 folds x 3 repeats).
+CV selected hyperparameters: these are tuning estimates, not nested-CV estimates or confidence intervals.
+
+  target           model evaluation           AUROC           AUPRC     sensitivity     specificity             PPV             NPV           Brier
+FLT3-ITD        majority         CV 0.500 +/- 0.000 0.247 +/- 0.039 0.000 +/- 0.000 1.000 +/- 0.000              NA 0.753 +/- 0.039 0.187 +/- 0.020
+FLT3-ITD marker_logistic         CV 0.854 +/- 0.055 0.721 +/- 0.096 0.515 +/- 0.136 0.966 +/- 0.022 0.816 +/- 0.135 0.861 +/- 0.037 0.119 +/- 0.017
+FLT3-ITD     elastic_net         CV 0.925 +/- 0.029 0.860 +/- 0.054 0.651 +/- 0.076 0.978 +/- 0.016 0.904 +/- 0.069 0.894 +/- 0.030 0.084 +/- 0.010
+FLT3-ITD   random_forest         CV 0.874 +/- 0.045 0.794 +/- 0.071 0.520 +/- 0.110 0.983 +/- 0.016 0.907 +/- 0.095 0.861 +/- 0.038 0.113 +/- 0.012
+    NPM1        majority         CV 0.500 +/- 0.000 0.281 +/- 0.038 0.000 +/- 0.000 1.000 +/- 0.000              NA 0.719 +/- 0.038 0.203 +/- 0.016
+    NPM1 marker_logistic         CV 0.937 +/- 0.034 0.904 +/- 0.050 0.880 +/- 0.070 0.928 +/- 0.034 0.824 +/- 0.083 0.951 +/- 0.032 0.080 +/- 0.015
+    NPM1     elastic_net         CV 0.976 +/- 0.023 0.970 +/- 0.023 0.915 +/- 0.052 0.992 +/- 0.013 0.978 +/- 0.033 0.967 +/- 0.023 0.042 +/- 0.011
+    NPM1   random_forest         CV 0.971 +/- 0.024 0.963 +/- 0.026 0.871 +/- 0.069 0.988 +/- 0.015 0.967 +/- 0.039 0.951 +/- 0.026 0.062 +/- 0.011
+FLT3-ITD     elastic_net    holdout           0.879           0.851           0.722           0.971           0.867           0.932           0.076
+    NPM1     elastic_net    holdout           0.999           0.997           0.960           1.000           1.000           0.985           0.026
+
+NA PPV means there were no positive predictions. Undefined-fold counts are in cv_summary.csv.
+Majority probabilities equal training prevalence; classifications are all negative at 0.50.
+
+Cohort: {"input_samples": 707, "controls_removed": 36, "matched_noncontrol": 671, "broad_AML": 654, "initial_AML": 445, "patients": 443, "patients_with_multiple_specimens": 2, "input_genes": 63677, "globally_all_zero_removed": 12661, "input_genes_after_zero_removal": 51016, "targets": {"FLT3-ITD": {"positive": 106, "negative": 339, "missing": 0, "patients": 443}, "NPM1": {"positive": 125, "negative": 320, "missing": 0, "patients": 443}}}
+
+FLT3-ITD development: 357 specimens, 355 patients; 88 positive / 269 negative.
+FLT3-ITD test: 88 specimens, 88 patients; 18 positive / 70 negative.
+NPM1 development: 356 specimens, 355 patients; 100 positive / 256 negative.
+NPM1 test: 89 specimens, 88 patients; 25 positive / 64 negative.
+
+Held-out confusion matrices at 0.50:
+FLT3-ITD: TP=13, FN=5, TN=68, FP=2; PPV=0.867, NPV=0.932.
+NPM1: TP=24, FN=1, TN=64, FP=0; PPV=1.000, NPV=0.985.
+
+Model comparison (development CV, not a test leaderboard):
+FLT3-ITD: random forest did not beat elastic-net mean CV AUPRC (0.794 vs 0.860; difference -0.066). This is a descriptive comparison, not evidence of statistical significance.
+NPM1: random forest did not beat elastic-net mean CV AUPRC (0.963 vs 0.970; difference -0.007). This is a descriptive comparison, not evidence of statistical significance.
+The optional MLP was not run; no deep-learning superiority claim is made.
+
+Top genes below come from development-only fits. All full lists retain Ensembl IDs.
+Elastic-net coefficients: log odds per training SD; signs are conditional associations.
+Forest importances: unsigned training impurity importance; biased and unstable with correlated genes.
+Prior-panel membership is annotated in feature CSVs; unlisted genes are not proven novel biomarkers.
+
+FLT3-ITD / marker_logistic:
+      stable_id display_label    weight  literature_panel_member
+ENSG00000120833         SOCS2  0.858648                     True
+ENSG00000133101         CCNA1  0.565555                     True
+ENSG00000134460         IL2RA  0.548127                     True
+ENSG00000142611        PRDM16  0.294991                     True
+ENSG00000115457        IGFBP2  0.267877                     True
+ENSG00000139318         DUSP6 -0.102688                     True
+ENSG00000184489        PTP4A3  0.048717                     True
+
+FLT3-ITD / elastic_net:
+      stable_id display_label    weight  literature_panel_member
+ENSG00000000971           CFH  0.232737                    False
+ENSG00000100336         APOL4  0.215923                    False
+ENSG00000150510       FAM124A  0.177852                    False
+ENSG00000234883      MIR155HG  0.139622                    False
+ENSG00000120833         SOCS2  0.134333                     True
+ENSG00000246985     SOCS2-AS1  0.133964                    False
+ENSG00000166068        SPRED1 -0.119399                    False
+ENSG00000164849        GPR146  0.108178                    False
+ENSG00000204161     C10orf128  0.102966                    False
+ENSG00000112139         MDGA1  0.095015                    False
+ENSG00000181264       TMEM136 -0.092453                    False
+ENSG00000198838          RYR3 -0.088641                    False
+ENSG00000155657           TTN -0.082775                    False
+ENSG00000075340          ADD2 -0.080344                    False
+ENSG00000131797        CLUHP3 -0.077893                    False
+
+FLT3-ITD / random_forest:
+      stable_id display_label   weight  literature_panel_member
+ENSG00000150510       FAM124A 0.012872                    False
+ENSG00000221926        TRIM16 0.011480                    False
+ENSG00000234883      MIR155HG 0.009441                    False
+ENSG00000166963         MAP1A 0.009246                    False
+ENSG00000000971           CFH 0.008987                    False
+ENSG00000246985     SOCS2-AS1 0.008787                    False
+ENSG00000074047          GLI2 0.008751                    False
+ENSG00000157021     FAM92A1P1 0.008167                    False
+ENSG00000227191         TRGC2 0.007711                    False
+ENSG00000152207       CYSLTR2 0.007573                    False
+ENSG00000136960         ENPP2 0.007047                    False
+ENSG00000120833         SOCS2 0.006727                     True
+ENSG00000100336         APOL4 0.006515                    False
+ENSG00000164849        GPR146 0.006385                    False
+ENSG00000140022         STON2 0.006309                    False
+
+NPM1 / marker_logistic:
+      stable_id display_label    weight  literature_panel_member
+ENSG00000253293        HOXA10  3.011915                     True
+ENSG00000078399         HOXA9 -2.229177                     True
+ENSG00000143995         MEIS1  1.906515                     True
+ENSG00000120093         HOXB3  1.138494                     True
+ENSG00000108511         HOXB6  0.914363                     True
+ENSG00000173917         HOXB2 -0.314121                     True
+
+NPM1 / elastic_net:
+      stable_id display_label    weight  literature_panel_member
+ENSG00000188064         WNT7B  0.327977                    False
+ENSG00000171246         NPTX1  0.260279                    False
+ENSG00000233101      HOXB-AS3  0.202760                    False
+ENSG00000064393         HIPK2  0.137768                    False
+ENSG00000136193         SCRN1 -0.137306                    False
+ENSG00000174059          CD34 -0.126388                    False
+ENSG00000149948         HMGA2 -0.122323                    False
+ENSG00000167081          PBX3  0.113383                    False
+ENSG00000223749      MIR503HG -0.110227                    False
+ENSG00000120093         HOXB3  0.107433                     True
+ENSG00000152760      TCTEX1D1 -0.105091                    False
+ENSG00000182742         HOXB4  0.100724                    False
+ENSG00000248334       WHAMMP2 -0.089007                    False
+ENSG00000163040       CCDC74A  0.088185                    False
+ENSG00000137558          PI15  0.079325                    False
+
+NPM1 / random_forest:
+      stable_id display_label   weight  literature_panel_member
+ENSG00000136944         LMX1B 0.022723                    False
+ENSG00000233101      HOXB-AS3 0.018083                    False
+ENSG00000182742         HOXB4 0.015793                    False
+ENSG00000188064         WNT7B 0.014772                    False
+ENSG00000108511         HOXB6 0.014255                     True
+ENSG00000167081          PBX3 0.012232                    False
+ENSG00000120068         HOXB8 0.011394                    False
+ENSG00000240990     HOXA11-AS 0.011150                    False
+ENSG00000197576         HOXA4 0.010696                    False
+ENSG00000105996         HOXA2 0.010644                    False
+ENSG00000105997         HOXA3 0.010350                    False
+ENSG00000171246         NPTX1 0.010191                    False
+ENSG00000005073        HOXA11 0.009787                    False
+ENSG00000260027         HOXB7 0.009063                    False
+ENSG00000232682  RP11-388P9.2 0.008853                    False
+
+Biological interpretation (exploratory, based on development-only fitted models):
+
+FLT3-ITD: the largest absolute elastic-net coefficients are CFH (+0.233),
+APOL4 (+0.216), FAM124A (+0.178), MIR155HG (+0.140), and SOCS2 (+0.134).
+SOCS2 is a literature-supported FLT3-related signal. MIR155HG is also supported:
+primary AML experiments reported increased MIR155HG/miR-155 in FLT3-ITD samples
+(https://pmc.ncbi.nlm.nih.gov/articles/PMC5465836/).
+SOCS2, CCNA1 and IL2RA also carry positive coefficients in the small marker model,
+consistent with the studies cited in README.md. DUSP6 has a small negative
+conditional marker coefficient despite reports of upregulation; this is not
+evidence against those studies and illustrates correlated-predictor instability.
+CFH, APOL4 and FAM124A are novel-to-this-analysis candidates whose specific
+FLT3-predictive biology has not been established by this review, not claims of
+new biological discoveries. The forest also prioritizes FAM124A, MIR155HG and CFH.
+
+NPM1: largest absolute elastic-net coefficients include WNT7B (+0.328), NPTX1
+(+0.260), HOXB-AS3 (+0.203), HIPK2 (+0.138), SCRN1 (-0.137), CD34 (-0.126),
+HMGA2 (-0.122), PBX3 (+0.113), MIR503HG (-0.110) and HOXB3 (+0.107).
+HOXB-AS3 has direct experimental support in NPM1-mutated AML
+(https://www.nature.com/articles/s41467-019-13259-2).
+Low CD34 and a HOX-associated program are consistent with established NPM1
+expression findings
+(https://ashpublications.org/blood/article/106/12/3747/109726/Mutations-in-nucleophosmin-NPM1-in-acute-myeloid).
+The marker model has positive HOXA10, MEIS1, HOXB3 and HOXB6 coefficients,
+supporting the expected program; conditional HOXA9 and HOXB2 coefficients are
+negative. HOXD4 was removed by the development-fitted expression/variance filter.
+In the broad elastic-net fit, HOXA9, HOXA10 and MEIS1 were eligible but received
+zero coefficients, while HOXB-AS3, PBX3 and HOXB3 ranked highly. This is compatible
+with redundant correlated signals and should not be described as direct
+selection of every canonical HOX/MEIS gene. WNT7B and NPTX1 are follow-up
+candidates here, not newly validated NPM1 biomarkers.
+The NPM1 forest prioritizes LMX1B, HOXB-AS3, HOXB4, WNT7B, HOXB6 and PBX3,
+and many additional HOX genes appear among its top 20, supporting a coherent
+HOX-associated expression program rather than an isolated single-gene finding.
+
+These gene-level interpretations were added after model selection and did not
+change panels, hyperparameters, thresholds, splits or model selection. Both
+linear fits are sparse (93 nonzero genes for FLT3-ITD; 88 for NPM1), but sparse
+does not mean stable. No causal inference or independent validation was done.
+
+
+Limitations:
+- One cohort, 445 specimens from 443 patients, no external validation; no diagnostic-use claim.
+- Small holdouts and few positive cases make sensitivity and calibration imprecise.
+- Repeated CV folds overlap; fold SD is not a confidence interval. Tuning CV can be optimistic.
+- Grouped nested CV would better estimate the selection procedure internally; not run due to added fitting cost.
+- Fixed 0.50 threshold is not a clinically optimized operating point; PPV/NPV depend on prevalence.
+- Cohort wave, marrow/blood source, cell composition and co-mutations can confound gene associations.
+- Prespecified 5,000-gene variance cap may lose useful low-variance genes; CPM is not composition-robust normalization.
+- Importance lists are exploratory, not causal, stable or externally validated biomarker panels.
+- No model was refit on the held-out specimens, and no clinical/mutation-derived field entered X.
+
+Reproduction: see ../README.md, ../requirements.txt, protocol.json, data_hashes.json,
+split_manifest.csv, cv_manifest.csv and cv_all_candidates.csv.
+Plots: calibration_cv.png, heldout_diagnostics.png, and *_features.png.
+

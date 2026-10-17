@@ -1,0 +1,78 @@
+TRACK 1 CLOSEOUT AUDIT
+======================
+
+Status: PASS
+Audit date: 2026-09-16
+
+Evaluation-region symmetry
+--------------------------
+
+Benchmark region: regions/regions/track1_validation.bed
+Region definition: unpadded final high-confidence exonic BED
+
+Records outside that BED (bedtools intersect -v):
+
+HCC1395.pass.validation.vcf.gz  0
+calls.snv.vcf.gz                0
+calls.indel.vcf.gz              0
+truth.snv.vcf.gz                0
+truth.indel.vcf.gz              0
+
+The workflow uses track1_slice.padded200.bed only for remote read slicing and
+Mutect2 local assembly. FILTER_CALLS restricts PASS calls with
+`bcftools view -R regions/track1_validation.bed`. BENCHMARK_CALLS independently
+restricts each source truth VCF with the same command and BED before comparison.
+
+Normalization symmetry
+----------------------
+
+Both call and truth paths use `bcftools norm -f GRCh38.d1.vd1.fa -m -any`
+before exact-allele `bcftools isec`. A second normalization check against the
+same FASTA produced:
+
+calls.snv.vcf.gz   total=988   split=0  realigned=0  removed=0  skipped=0
+calls.indel.vcf.gz total=48    split=0  realigned=0  removed=0  skipped=0
+truth.snv.vcf.gz   total=1405  split=0  realigned=0  removed=0  skipped=0
+truth.indel.vcf.gz total=51    split=0  realigned=0  removed=0  skipped=0
+
+Benchmark metrics
+-----------------
+
+Type   TP   FP   FN   Precision   Recall   F1
+SNV   705  283  700     0.7136   0.5018  0.5892
+INDEL  32   16   19     0.6667   0.6275  0.6465
+
+Scope and replicate framing
+---------------------------
+
+This is a high-confidence exonic whole-exome benchmark from one SEQC2 replicate
+pair: WES_LL_T_1 (HCC1395 tumor) and WES_LL_N_1 (HCC1395BL matched normal).
+HCC1395 is a breast-cancer reference cell line. The result validates this local
+workflow; it is neither a targeted-panel caller result nor an AML-specific
+performance estimate.
+
+Region gate
+-----------
+
+The IMPACT candidate region contained 44 truth SNVs and one truth indel (45
+combined), below the configured minimum of 200. A first all-basic-exon fallback
+covered 151,135,889 bases and was rejected as broader than a defensible coding
+exome. The final benchmark used GENCODE v50 basic protein-coding exons
+intersected with the SEQC2 high-confidence BED: 225,074 intervals, 96,549,992
+bases, 1,405 SNVs, and 51 indels in truth. The abandoned 151 Mb trial was not
+used for the final read slices or metrics.
+
+Exact versions
+--------------
+
+Python 3.10.14
+OpenJDK 17.0.11
+Nextflow 26.04.6 build 12646
+samtools 1.21
+bcftools 1.21
+htslib 1.21
+bedtools 2.31.1
+GATK 4.6.2.0
+GENCODE release 50 (GRCh38.p14)
+SEQC2 truth calls v1.2.1; high-confidence regions v1.2
+Reference GRCh38.d1.vd1

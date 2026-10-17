@@ -1,0 +1,36 @@
+# Dev hygiene
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+.conda/
+
+# Nextflow run state/caches and reference-genome downloads (aml_variant_demo):
+# multi-GB, either public reference data or reproducible intermediate cache.
+work/
+track2_discovery/
+.nextflow/
+.nextflow.log*
+*.bam
+*.bai
+*.fa
+*.fa.gz
+*.fasta
+*.gtf
+*.gtf.gz
+*.idx
+*.cache
+*.solv
+
+# Large regenerable derived data (see each project's README for how to rebuild):
+# - data/counts/: raw TCGA-LAML GDC downloads; acquire.py re-fetches + checksums them
+# - aligned_raw_counts.npy / counts_input.npy: frozen numeric inputs, rebuilt by
+#   rerunning the prepare/develop phase from the original source files
+tcga_laml_validation/data/counts/
+tcga_laml_validation/results/aligned_raw_counts.npy
+beataml_modeling/results/counts_input.npy
+
+# Regenerable copies/caches within beataml_mlops (see beataml_mlops/README.md)
+beataml_mlops/mlruns/
+beataml_mlops/api/artifacts/

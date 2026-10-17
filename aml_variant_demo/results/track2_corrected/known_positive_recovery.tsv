@@ -1,0 +1,5 @@
+sample	event	expected	observed	result	length_bp	vaf_percent	evidence
+MV4-11	FLT3-ITD	positive	positive	PASS	30	23.077	6
+KASUMI-1	FLT3-ITD	negative	negative	PASS			
+KASUMI-1	RUNX1--RUNX1T1	positive	positive	PASS			pizzly split=199;pair=1
+NB-4	PML--RARA	positive	positive	PASS			pizzly split=65;pair=0

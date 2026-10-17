@@ -1,0 +1,35 @@
+{
+  "seed": 20260916,
+  "project": "TCGA-LAML",
+  "access": "open",
+  "workflow": "STAR - Counts",
+  "expression_column": "unstranded",
+  "gene_model": "GENCODE v36",
+  "alignment": "Ensembl stable IDs only; strip version; preserve PAR_Y identity; no symbol remapping",
+  "normalization": "Frozen LogCPM over the exact 51016 training input columns, populated from 46973 matched IDs; missing raw placeholders zero only for transform input",
+  "missing_features": "After frozen standardization, every absent selected gene is set to 0; not interpreted as measured zero expression",
+  "threshold": 0.5,
+  "bootstrap": "5000 ordinary patient bootstrap resamples; percentile 95% CI; one sample per patient",
+  "label_source": "https://api.gdc.cancer.gov/data/b9196563-a05d-40b8-80dc-640ec712eb06",
+  "FLT3_definition": "39 author-curated in_frame_ins calls; point mutations ITD-negative",
+  "NPM1_definition": "Any reported NPM1 mutation in complete author-curated matrix; includes one p.K263R missense",
+  "secondary_label_check": "Report NPM1 excluding noncanonical p.K263R using the SAME predictions; never select model/threshold by this result",
+  "models": {
+    "FLT3-ITD": "9addc973ef888eca962ade2bfd571dade414b8eeb9c7a68229a29a8fc3814e79",
+    "NPM1": "39c338f23608f937e448247b3008e664d5ed8143a37bf87f86656468dc1b5a98"
+  },
+  "all_input_genes": 51016,
+  "matched_input_genes": 46973,
+  "absent_input_genes": 4043,
+  "STAR_gene_rows": 60660,
+  "refitting": false,
+  "retuning": false,
+  "recalibration": false,
+  "batch_correction": false,
+  "software": {
+    "python": "3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:23:25) \n[Clang 6.0 (clang-600.0.57)]",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "sklearn": "1.6.1"
+  }
+}

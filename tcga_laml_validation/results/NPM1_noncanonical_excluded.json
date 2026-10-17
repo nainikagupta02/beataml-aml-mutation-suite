@@ -1,0 +1,19 @@
+{
+  "description": "Predeclared label-definition sensitivity, same saved predictions",
+  "excluded_patients": [
+    "TCGA-AB-2915"
+  ],
+  "N": 150,
+  "positive": 37,
+  "AUROC": 0.9904329107868931,
+  "AUPRC": 0.9679598868535824,
+  "sensitivity": 0.9459459459459459,
+  "specificity": 0.9734513274336283,
+  "PPV": 0.9210526315789473,
+  "NPV": 0.9821428571428571,
+  "Brier": 0.03317613970543192,
+  "TN": 110,
+  "FP": 3,
+  "FN": 2,
+  "TP": 35
+}

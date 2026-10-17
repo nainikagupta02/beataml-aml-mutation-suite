@@ -1,0 +1,1 @@
+{"op":"and","content":[{"op":"=","content":{"field":"cases.project.project_id","value":"TCGA-LAML"}},{"op":"=","content":{"field":"access","value":"open"}},{"op":"=","content":{"field":"data_type","value":"Gene Expression Quantification"}},{"op":"=","content":{"field":"analysis.workflow_type","value":"STAR - Counts"}}]}

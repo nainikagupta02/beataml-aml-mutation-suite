@@ -1,0 +1,14 @@
+{
+  "beataml_wv1to4_clinical.xlsx": {
+    "bytes": 488278,
+    "sha256": "bc692f647f93945e1cf883271af5501bf75c8af3e681676241093c198ed167ad"
+  },
+  "beataml_waves1to4_sample_mapping.xlsx": {
+    "bytes": 72038,
+    "sha256": "5581140cedd3348ec78bed878c27aa12c9538a5fab115324b91ca56aa138f0fc"
+  },
+  "beataml_waves1to4_counts_dbgap.txt": {
+    "bytes": 122488199,
+    "sha256": "26302116e26138e980a7816303a0886a89a3c951f3ba673051a46c96a658680d"
+  }
+}

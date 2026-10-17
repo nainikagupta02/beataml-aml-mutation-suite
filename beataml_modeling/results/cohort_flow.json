@@ -1,0 +1,26 @@
+{
+  "input_samples": 707,
+  "controls_removed": 36,
+  "matched_noncontrol": 671,
+  "broad_AML": 654,
+  "initial_AML": 445,
+  "patients": 443,
+  "patients_with_multiple_specimens": 2,
+  "input_genes": 63677,
+  "globally_all_zero_removed": 12661,
+  "input_genes_after_zero_removal": 51016,
+  "targets": {
+    "FLT3-ITD": {
+      "positive": 106,
+      "negative": 339,
+      "missing": 0,
+      "patients": 443
+    },
+    "NPM1": {
+      "positive": 125,
+      "negative": 320,
+      "missing": 0,
+      "patients": 443
+    }
+  }
+}

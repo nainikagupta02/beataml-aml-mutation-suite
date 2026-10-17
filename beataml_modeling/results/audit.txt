@@ -1,0 +1,4 @@
+FLT3-ITD: no patient overlap; all 15 folds partition development correctly; OOF metrics reconciled; selection matches CV.
+NPM1: no patient overlap; all 15 folds partition development correctly; OOF metrics reconciled; selection matches CV.
+All three source files match their pre-analysis SHA256 hashes.
+Held-out metrics reconcile from saved predictions; model selections are unchanged since evaluation began.

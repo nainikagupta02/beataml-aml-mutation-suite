@@ -1,0 +1,6 @@
+Track 2 known-positive recovery (not a sensitivity/specificity validation)
+MV4-11 FLT3-ITD: expected positive, observed positive [PASS]; evidence 6
+KASUMI-1 FLT3-ITD: expected negative, observed negative [PASS]; evidence see fields
+KASUMI-1 RUNX1--RUNX1T1: expected positive, observed positive [PASS]; evidence pizzly split=199;pair=1
+NB-4 PML--RARA: expected positive, observed positive [PASS]; evidence pizzly split=65;pair=0
+Fusion cells PASS: pizzly recovered both preregistered expected gene pairs.

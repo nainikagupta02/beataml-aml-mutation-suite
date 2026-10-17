@@ -1,0 +1,8 @@
+stable_id,display_label,description,biotype,weight,importance_type,absolute_weight,literature_panel_member
+ENSG00000120833,SOCS2,suppressor of cytokine signaling 2 [Source:HGNC Symbol;Acc:19382],protein_coding,0.8586476199054591,standardized_log_odds_coefficient,0.8586476199054591,True
+ENSG00000133101,CCNA1,cyclin A1 [Source:HGNC Symbol;Acc:1577],protein_coding,0.5655554236663145,standardized_log_odds_coefficient,0.5655554236663145,True
+ENSG00000134460,IL2RA,"interleukin 2 receptor, alpha [Source:HGNC Symbol;Acc:6008]",protein_coding,0.5481273519629044,standardized_log_odds_coefficient,0.5481273519629044,True
+ENSG00000142611,PRDM16,PR domain containing 16 [Source:HGNC Symbol;Acc:14000],protein_coding,0.2949906085041006,standardized_log_odds_coefficient,0.2949906085041006,True
+ENSG00000115457,IGFBP2,"insulin-like growth factor binding protein 2, 36kDa [Source:HGNC Symbol;Acc:5471]",protein_coding,0.26787744985980183,standardized_log_odds_coefficient,0.26787744985980183,True
+ENSG00000139318,DUSP6,dual specificity phosphatase 6 [Source:HGNC Symbol;Acc:3072],protein_coding,-0.10268800296407925,standardized_log_odds_coefficient,0.10268800296407925,True
+ENSG00000184489,PTP4A3,"protein tyrosine phosphatase type IVA, member 3 [Source:HGNC Symbol;Acc:9636]",protein_coding,0.04871693862932534,standardized_log_odds_coefficient,0.04871693862932534,True

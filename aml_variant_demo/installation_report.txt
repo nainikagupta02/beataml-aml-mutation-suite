@@ -1,0 +1,42 @@
+AML variant demo installation report
+====================================
+
+Status: PASS (all requested executables launched successfully)
+Host: macOS 26.6.2, Apple silicon arm64
+Environment: isolated Conda osx-64 environment, executed through Rosetta 2
+Environment prefix: .conda/envs/aml-variant-demo
+Installed environment/cache disk use: 5.4 GiB
+Free disk after installation: 78 GiB
+
+Why osx-64:
+  Bioconda does not publish Kallisto 0.48 or Pizzly 0.37.3 for osx-arm64.
+  Both requested versions are available for osx-64, and Rosetta was verified.
+
+Verified versions:
+  Python             3.10.14
+  OpenJDK            17.0.11
+  Nextflow           26.04.6
+  samtools           1.21
+  bcftools           1.21
+  htslib/bgzip/tabix 1.21
+  bedtools           2.31.1
+  GATK               4.6.2.0
+  Kallisto           0.48.0
+  Pizzly             0.37.3
+  getITD             1.5.17
+  SRA Toolkit        3.4.1
+  gsutil             5.37 (Google Cloud SDK 582.0.0 package)
+  pandas             2.3.3
+
+Compatibility/fallback decisions:
+  - `pip install getitd` failed because PyPI has no package by that name.
+    Bioconda's current noarch getITD 1.5.17 package was installed and its help
+    command passed. It emits a Biopython pairwise2 deprecation warning but runs.
+    ITDseek fallback was not activated.
+  - Pizzly's help command passed with Kallisto 0.48.0. The samtools-only
+    chimeric-read fallback was not activated.
+  - gsutil passed outside the restricted tool sandbox with multiprocessing
+    available. A sandbox-only local-socket restriction can print a traceback
+    during its version check; this is not present in normal local execution.
+
+No biological source data were downloaded or modified during installation.

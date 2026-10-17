@@ -1,0 +1,32 @@
+PyTorch MLP vs frozen elastic-net: BEAT-AML CV, BEAT-AML held-out, TCGA-LAML external
+
+FLT3-ITD:
+  CV AUPRC:      elastic-net 0.860 +/- 0.054   pytorch_mlp 0.790 +/- 0.060
+  CV AUROC:      elastic-net 0.925 +/- 0.029   pytorch_mlp 0.873 +/- 0.032
+  BEAT held-out AUROC: elastic-net 0.879   pytorch_mlp 0.894
+  TCGA AUROC:          elastic-net 0.873   pytorch_mlp 0.858
+  TCGA AUPRC:          elastic-net 0.738   pytorch_mlp 0.676
+  TCGA Brier:          elastic-net 0.095   pytorch_mlp 0.135
+  pytorch_mlp did not beat elastic-net on TCGA AUPRC (difference -0.062); descriptive only, not a significance test.
+
+NPM1:
+  CV AUPRC:      elastic-net 0.970 +/- 0.023   pytorch_mlp 0.951 +/- 0.035
+  CV AUROC:      elastic-net 0.976 +/- 0.023   pytorch_mlp 0.963 +/- 0.035
+  BEAT held-out AUROC: elastic-net 0.999   pytorch_mlp 1.000
+  TCGA AUROC:          elastic-net 0.964   pytorch_mlp 0.966
+  TCGA AUPRC:          elastic-net 0.949   pytorch_mlp 0.927
+  TCGA Brier:          elastic-net 0.039   pytorch_mlp 0.045
+  pytorch_mlp did not beat elastic-net on TCGA AUPRC (difference -0.022); descriptive only, not a significance test.
+
+Architecture: MLP(64, 16), ReLU, dropout 0.3, up to 5000 genes (same fold-fit filter as the broad elastic-net/random-forest models), Adam lr=0.001, weight_decay=0.001, 60 epochs, batch size 32. One fixed configuration,
+prespecified before fitting; no architecture/hyperparameter search was run, unlike the elastic-net grid.
+Caveats:
+- n~350-360 training specimens with up to 5,000 features is a severe small-n/high-p regime for a
+  neural network; this is a feasibility comparison, not a claim that deep learning helps here.
+- The BEAT-AML held-out numbers reuse the SAME locked test partition the elastic-net study already
+  evaluated once. Evaluating a second model on that partition is a secondary analysis: it is still a
+  held-out comparison for THIS model (never used for its own fitting/filtering/tuning), but it is not
+  an independent test of the overall two-model comparison procedure.
+- The TCGA comparison is the primary, cleaner comparison: both models receive the identical frozen
+  external cohort and zero-imputation rule for genes absent from TCGA, with no refitting either way.
+- No calibration, threshold or architecture tuning was performed after seeing TCGA or held-out results.

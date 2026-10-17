@@ -1,0 +1,413 @@
+
+Fontconfig error: No writable cache directories
+	/usr/local/var/cache/fontconfig
+	/Users/nyu/.cache/fontconfig
+	/Users/nyu/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/usr/local/var/cache/fontconfig
+	/Users/nyu/.cache/fontconfig
+	/Users/nyu/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/usr/local/var/cache/fontconfig
+	/Users/nyu/.cache/fontconfig
+	/Users/nyu/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/usr/local/var/cache/fontconfig
+	/Users/nyu/.cache/fontconfig
+	/Users/nyu/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/usr/local/var/cache/fontconfig
+	/Users/nyu/.cache/fontconfig
+	/Users/nyu/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+COHORT
+{
+  "input_samples": 707,
+  "controls_removed": 36,
+  "matched_noncontrol": 671,
+  "broad_AML": 654,
+  "initial_AML": 445,
+  "patients": 443,
+  "patients_with_multiple_specimens": 2,
+  "input_genes": 63677,
+  "globally_all_zero_removed": 12661,
+  "input_genes_after_zero_removal": 51016,
+  "targets": {
+    "FLT3-ITD": {
+      "positive": 106,
+      "negative": 339,
+      "missing": 0,
+      "patients": 443
+    },
+    "NPM1": {
+      "positive": 125,
+      "negative": 320,
+      "missing": 0,
+      "patients": 443
+    }
+  }
+}
+FLT3-ITD development: n=357, patients=355, positive=88, negative=269
+FLT3-ITD test: n=88, patients=88, positive=18, negative=70
+FLT3-ITD majority candidate 1/1 repeat 1 fold 1 done
+FLT3-ITD majority candidate 1/1 repeat 1 fold 2 done
+FLT3-ITD majority candidate 1/1 repeat 1 fold 3 done
+FLT3-ITD majority candidate 1/1 repeat 1 fold 4 done
+FLT3-ITD majority candidate 1/1 repeat 1 fold 5 done
+FLT3-ITD majority candidate 1/1 repeat 2 fold 1 done
+FLT3-ITD majority candidate 1/1 repeat 2 fold 2 done
+FLT3-ITD majority candidate 1/1 repeat 2 fold 3 done
+FLT3-ITD majority candidate 1/1 repeat 2 fold 4 done
+FLT3-ITD majority candidate 1/1 repeat 2 fold 5 done
+FLT3-ITD majority candidate 1/1 repeat 3 fold 1 done
+FLT3-ITD majority candidate 1/1 repeat 3 fold 2 done
+FLT3-ITD majority candidate 1/1 repeat 3 fold 3 done
+FLT3-ITD majority candidate 1/1 repeat 3 fold 4 done
+FLT3-ITD majority candidate 1/1 repeat 3 fold 5 done
+FLT3-ITD majority {}: AP=0.247, AUC=0.500, elapsed=0.1s
+FLT3-ITD marker_logistic candidate 1/3 repeat 1 fold 1 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 1 fold 2 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 1 fold 3 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 1 fold 4 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 1 fold 5 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 2 fold 1 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 2 fold 2 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 2 fold 3 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 2 fold 4 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 2 fold 5 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 3 fold 1 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 3 fold 2 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 3 fold 3 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 3 fold 4 done
+FLT3-ITD marker_logistic candidate 1/3 repeat 3 fold 5 done
+FLT3-ITD marker_logistic {'model__C': 0.1}: AP=0.721, AUC=0.854, elapsed=2.9s
+FLT3-ITD marker_logistic candidate 2/3 repeat 1 fold 1 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 1 fold 2 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 1 fold 3 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 1 fold 4 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 1 fold 5 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 2 fold 1 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 2 fold 2 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 2 fold 3 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 2 fold 4 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 2 fold 5 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 3 fold 1 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 3 fold 2 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 3 fold 3 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 3 fold 4 done
+FLT3-ITD marker_logistic candidate 2/3 repeat 3 fold 5 done
+FLT3-ITD marker_logistic {'model__C': 1.0}: AP=0.719, AUC=0.856, elapsed=2.6s
+FLT3-ITD marker_logistic candidate 3/3 repeat 1 fold 1 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 1 fold 2 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 1 fold 3 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 1 fold 4 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 1 fold 5 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 2 fold 1 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 2 fold 2 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 2 fold 3 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 2 fold 4 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 2 fold 5 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 3 fold 1 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 3 fold 2 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 3 fold 3 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 3 fold 4 done
+FLT3-ITD marker_logistic candidate 3/3 repeat 3 fold 5 done
+FLT3-ITD marker_logistic {'model__C': 10.0}: AP=0.720, AUC=0.857, elapsed=2.6s
+FLT3-ITD marker_logistic top genes:
+      stable_id display_label    weight
+ENSG00000120833         SOCS2  0.858648
+ENSG00000133101         CCNA1  0.565555
+ENSG00000134460         IL2RA  0.548127
+ENSG00000142611        PRDM16  0.294991
+ENSG00000115457        IGFBP2  0.267877
+ENSG00000139318         DUSP6 -0.102688
+ENSG00000184489        PTP4A3  0.048717
+FLT3-ITD elastic_net candidate 1/3 repeat 1 fold 1 done
+FLT3-ITD elastic_net candidate 1/3 repeat 1 fold 2 done
+FLT3-ITD elastic_net candidate 1/3 repeat 1 fold 3 done
+FLT3-ITD elastic_net candidate 1/3 repeat 1 fold 4 done
+FLT3-ITD elastic_net candidate 1/3 repeat 1 fold 5 done
+FLT3-ITD elastic_net candidate 1/3 repeat 2 fold 1 done
+FLT3-ITD elastic_net candidate 1/3 repeat 2 fold 2 done
+FLT3-ITD elastic_net candidate 1/3 repeat 2 fold 3 done
+FLT3-ITD elastic_net candidate 1/3 repeat 2 fold 4 done
+FLT3-ITD elastic_net candidate 1/3 repeat 2 fold 5 done
+FLT3-ITD elastic_net candidate 1/3 repeat 3 fold 1 done
+FLT3-ITD elastic_net candidate 1/3 repeat 3 fold 2 done
+FLT3-ITD elastic_net candidate 1/3 repeat 3 fold 3 done
+FLT3-ITD elastic_net candidate 1/3 repeat 3 fold 4 done
+FLT3-ITD elastic_net candidate 1/3 repeat 3 fold 5 done
+FLT3-ITD elastic_net {'model__C': 0.01}: AP=0.790, AUC=0.880, elapsed=17.8s
+FLT3-ITD elastic_net candidate 2/3 repeat 1 fold 1 done
+FLT3-ITD elastic_net candidate 2/3 repeat 1 fold 2 done
+FLT3-ITD elastic_net candidate 2/3 repeat 1 fold 3 done
+FLT3-ITD elastic_net candidate 2/3 repeat 1 fold 4 done
+FLT3-ITD elastic_net candidate 2/3 repeat 1 fold 5 done
+FLT3-ITD elastic_net candidate 2/3 repeat 2 fold 1 done
+FLT3-ITD elastic_net candidate 2/3 repeat 2 fold 2 done
+FLT3-ITD elastic_net candidate 2/3 repeat 2 fold 3 done
+FLT3-ITD elastic_net candidate 2/3 repeat 2 fold 4 done
+FLT3-ITD elastic_net candidate 2/3 repeat 2 fold 5 done
+FLT3-ITD elastic_net candidate 2/3 repeat 3 fold 1 done
+FLT3-ITD elastic_net candidate 2/3 repeat 3 fold 2 done
+FLT3-ITD elastic_net candidate 2/3 repeat 3 fold 3 done
+FLT3-ITD elastic_net candidate 2/3 repeat 3 fold 4 done
+FLT3-ITD elastic_net candidate 2/3 repeat 3 fold 5 done
+FLT3-ITD elastic_net {'model__C': 0.05}: AP=0.860, AUC=0.925, elapsed=29.7s
+FLT3-ITD elastic_net candidate 3/3 repeat 1 fold 1 done
+FLT3-ITD elastic_net candidate 3/3 repeat 1 fold 2 done
+FLT3-ITD elastic_net candidate 3/3 repeat 1 fold 3 done
+FLT3-ITD elastic_net candidate 3/3 repeat 1 fold 4 done
+FLT3-ITD elastic_net candidate 3/3 repeat 1 fold 5 done
+FLT3-ITD elastic_net candidate 3/3 repeat 2 fold 1 done
+FLT3-ITD elastic_net candidate 3/3 repeat 2 fold 2 done
+FLT3-ITD elastic_net candidate 3/3 repeat 2 fold 3 done
+FLT3-ITD elastic_net candidate 3/3 repeat 2 fold 4 done
+FLT3-ITD elastic_net candidate 3/3 repeat 2 fold 5 done
+FLT3-ITD elastic_net candidate 3/3 repeat 3 fold 1 done
+FLT3-ITD elastic_net candidate 3/3 repeat 3 fold 2 done
+FLT3-ITD elastic_net candidate 3/3 repeat 3 fold 3 done
+FLT3-ITD elastic_net candidate 3/3 repeat 3 fold 4 done
+FLT3-ITD elastic_net candidate 3/3 repeat 3 fold 5 done
+FLT3-ITD elastic_net {'model__C': 0.2}: AP=0.841, AUC=0.916, elapsed=43.7s
+FLT3-ITD elastic_net top genes:
+      stable_id display_label    weight
+ENSG00000000971           CFH  0.232737
+ENSG00000100336         APOL4  0.215923
+ENSG00000150510       FAM124A  0.177852
+ENSG00000234883      MIR155HG  0.139622
+ENSG00000120833         SOCS2  0.134333
+ENSG00000246985     SOCS2-AS1  0.133964
+ENSG00000166068        SPRED1 -0.119399
+ENSG00000164849        GPR146  0.108178
+ENSG00000204161     C10orf128  0.102966
+ENSG00000112139         MDGA1  0.095015
+FLT3-ITD random_forest candidate 1/2 repeat 1 fold 1 done
+FLT3-ITD random_forest candidate 1/2 repeat 1 fold 2 done
+FLT3-ITD random_forest candidate 1/2 repeat 1 fold 3 done
+FLT3-ITD random_forest candidate 1/2 repeat 1 fold 4 done
+FLT3-ITD random_forest candidate 1/2 repeat 1 fold 5 done
+FLT3-ITD random_forest candidate 1/2 repeat 2 fold 1 done
+FLT3-ITD random_forest candidate 1/2 repeat 2 fold 2 done
+FLT3-ITD random_forest candidate 1/2 repeat 2 fold 3 done
+FLT3-ITD random_forest candidate 1/2 repeat 2 fold 4 done
+FLT3-ITD random_forest candidate 1/2 repeat 2 fold 5 done
+FLT3-ITD random_forest candidate 1/2 repeat 3 fold 1 done
+FLT3-ITD random_forest candidate 1/2 repeat 3 fold 2 done
+FLT3-ITD random_forest candidate 1/2 repeat 3 fold 3 done
+FLT3-ITD random_forest candidate 1/2 repeat 3 fold 4 done
+FLT3-ITD random_forest candidate 1/2 repeat 3 fold 5 done
+FLT3-ITD random_forest {'model__min_samples_leaf': 2}: AP=0.793, AUC=0.877, elapsed=16.8s
+FLT3-ITD random_forest candidate 2/2 repeat 1 fold 1 done
+FLT3-ITD random_forest candidate 2/2 repeat 1 fold 2 done
+FLT3-ITD random_forest candidate 2/2 repeat 1 fold 3 done
+FLT3-ITD random_forest candidate 2/2 repeat 1 fold 4 done
+FLT3-ITD random_forest candidate 2/2 repeat 1 fold 5 done
+FLT3-ITD random_forest candidate 2/2 repeat 2 fold 1 done
+FLT3-ITD random_forest candidate 2/2 repeat 2 fold 2 done
+FLT3-ITD random_forest candidate 2/2 repeat 2 fold 3 done
+FLT3-ITD random_forest candidate 2/2 repeat 2 fold 4 done
+FLT3-ITD random_forest candidate 2/2 repeat 2 fold 5 done
+FLT3-ITD random_forest candidate 2/2 repeat 3 fold 1 done
+FLT3-ITD random_forest candidate 2/2 repeat 3 fold 2 done
+FLT3-ITD random_forest candidate 2/2 repeat 3 fold 3 done
+FLT3-ITD random_forest candidate 2/2 repeat 3 fold 4 done
+FLT3-ITD random_forest candidate 2/2 repeat 3 fold 5 done
+FLT3-ITD random_forest {'model__min_samples_leaf': 5}: AP=0.794, AUC=0.874, elapsed=14.1s
+FLT3-ITD random_forest top genes:
+      stable_id display_label   weight
+ENSG00000150510       FAM124A 0.012872
+ENSG00000221926        TRIM16 0.011480
+ENSG00000234883      MIR155HG 0.009441
+ENSG00000166963         MAP1A 0.009246
+ENSG00000000971           CFH 0.008987
+ENSG00000246985     SOCS2-AS1 0.008787
+ENSG00000074047          GLI2 0.008751
+ENSG00000157021     FAM92A1P1 0.008167
+ENSG00000227191         TRGC2 0.007711
+ENSG00000152207       CYSLTR2 0.007573
+LOCKED selection for FLT3-ITD: elastic_net {'model__C': 0.05}
+NPM1 development: n=356, patients=355, positive=100, negative=256
+NPM1 test: n=89, patients=88, positive=25, negative=64
+NPM1 majority candidate 1/1 repeat 1 fold 1 done
+NPM1 majority candidate 1/1 repeat 1 fold 2 done
+NPM1 majority candidate 1/1 repeat 1 fold 3 done
+NPM1 majority candidate 1/1 repeat 1 fold 4 done
+NPM1 majority candidate 1/1 repeat 1 fold 5 done
+NPM1 majority candidate 1/1 repeat 2 fold 1 done
+NPM1 majority candidate 1/1 repeat 2 fold 2 done
+NPM1 majority candidate 1/1 repeat 2 fold 3 done
+NPM1 majority candidate 1/1 repeat 2 fold 4 done
+NPM1 majority candidate 1/1 repeat 2 fold 5 done
+NPM1 majority candidate 1/1 repeat 3 fold 1 done
+NPM1 majority candidate 1/1 repeat 3 fold 2 done
+NPM1 majority candidate 1/1 repeat 3 fold 3 done
+NPM1 majority candidate 1/1 repeat 3 fold 4 done
+NPM1 majority candidate 1/1 repeat 3 fold 5 done
+NPM1 majority {}: AP=0.281, AUC=0.500, elapsed=0.1s
+NPM1 marker_logistic candidate 1/3 repeat 1 fold 1 done
+NPM1 marker_logistic candidate 1/3 repeat 1 fold 2 done
+NPM1 marker_logistic candidate 1/3 repeat 1 fold 3 done
+NPM1 marker_logistic candidate 1/3 repeat 1 fold 4 done
+NPM1 marker_logistic candidate 1/3 repeat 1 fold 5 done
+NPM1 marker_logistic candidate 1/3 repeat 2 fold 1 done
+NPM1 marker_logistic candidate 1/3 repeat 2 fold 2 done
+NPM1 marker_logistic candidate 1/3 repeat 2 fold 3 done
+NPM1 marker_logistic candidate 1/3 repeat 2 fold 4 done
+NPM1 marker_logistic candidate 1/3 repeat 2 fold 5 done
+NPM1 marker_logistic candidate 1/3 repeat 3 fold 1 done
+NPM1 marker_logistic candidate 1/3 repeat 3 fold 2 done
+NPM1 marker_logistic candidate 1/3 repeat 3 fold 3 done
+NPM1 marker_logistic candidate 1/3 repeat 3 fold 4 done
+NPM1 marker_logistic candidate 1/3 repeat 3 fold 5 done
+NPM1 marker_logistic {'model__C': 0.1}: AP=0.875, AUC=0.929, elapsed=2.7s
+NPM1 marker_logistic candidate 2/3 repeat 1 fold 1 done
+NPM1 marker_logistic candidate 2/3 repeat 1 fold 2 done
+NPM1 marker_logistic candidate 2/3 repeat 1 fold 3 done
+NPM1 marker_logistic candidate 2/3 repeat 1 fold 4 done
+NPM1 marker_logistic candidate 2/3 repeat 1 fold 5 done
+NPM1 marker_logistic candidate 2/3 repeat 2 fold 1 done
+NPM1 marker_logistic candidate 2/3 repeat 2 fold 2 done
+NPM1 marker_logistic candidate 2/3 repeat 2 fold 3 done
+NPM1 marker_logistic candidate 2/3 repeat 2 fold 4 done
+NPM1 marker_logistic candidate 2/3 repeat 2 fold 5 done
+NPM1 marker_logistic candidate 2/3 repeat 3 fold 1 done
+NPM1 marker_logistic candidate 2/3 repeat 3 fold 2 done
+NPM1 marker_logistic candidate 2/3 repeat 3 fold 3 done
+NPM1 marker_logistic candidate 2/3 repeat 3 fold 4 done
+NPM1 marker_logistic candidate 2/3 repeat 3 fold 5 done
+NPM1 marker_logistic {'model__C': 1.0}: AP=0.891, AUC=0.934, elapsed=2.6s
+NPM1 marker_logistic candidate 3/3 repeat 1 fold 1 done
+NPM1 marker_logistic candidate 3/3 repeat 1 fold 2 done
+NPM1 marker_logistic candidate 3/3 repeat 1 fold 3 done
+NPM1 marker_logistic candidate 3/3 repeat 1 fold 4 done
+NPM1 marker_logistic candidate 3/3 repeat 1 fold 5 done
+NPM1 marker_logistic candidate 3/3 repeat 2 fold 1 done
+NPM1 marker_logistic candidate 3/3 repeat 2 fold 2 done
+NPM1 marker_logistic candidate 3/3 repeat 2 fold 3 done
+NPM1 marker_logistic candidate 3/3 repeat 2 fold 4 done
+NPM1 marker_logistic candidate 3/3 repeat 2 fold 5 done
+NPM1 marker_logistic candidate 3/3 repeat 3 fold 1 done
+NPM1 marker_logistic candidate 3/3 repeat 3 fold 2 done
+NPM1 marker_logistic candidate 3/3 repeat 3 fold 3 done
+NPM1 marker_logistic candidate 3/3 repeat 3 fold 4 done
+NPM1 marker_logistic candidate 3/3 repeat 3 fold 5 done
+NPM1 marker_logistic {'model__C': 10.0}: AP=0.904, AUC=0.937, elapsed=2.6s
+NPM1 marker_logistic top genes:
+      stable_id display_label    weight
+ENSG00000253293        HOXA10  3.011915
+ENSG00000078399         HOXA9 -2.229177
+ENSG00000143995         MEIS1  1.906515
+ENSG00000120093         HOXB3  1.138494
+ENSG00000108511         HOXB6  0.914363
+ENSG00000173917         HOXB2 -0.314121
+NPM1 elastic_net candidate 1/3 repeat 1 fold 1 done
+NPM1 elastic_net candidate 1/3 repeat 1 fold 2 done
+NPM1 elastic_net candidate 1/3 repeat 1 fold 3 done
+NPM1 elastic_net candidate 1/3 repeat 1 fold 4 done
+NPM1 elastic_net candidate 1/3 repeat 1 fold 5 done
+NPM1 elastic_net candidate 1/3 repeat 2 fold 1 done
+NPM1 elastic_net candidate 1/3 repeat 2 fold 2 done
+NPM1 elastic_net candidate 1/3 repeat 2 fold 3 done
+NPM1 elastic_net candidate 1/3 repeat 2 fold 4 done
+NPM1 elastic_net candidate 1/3 repeat 2 fold 5 done
+NPM1 elastic_net candidate 1/3 repeat 3 fold 1 done
+NPM1 elastic_net candidate 1/3 repeat 3 fold 2 done
+NPM1 elastic_net candidate 1/3 repeat 3 fold 3 done
+NPM1 elastic_net candidate 1/3 repeat 3 fold 4 done
+NPM1 elastic_net candidate 1/3 repeat 3 fold 5 done
+NPM1 elastic_net {'model__C': 0.01}: AP=0.953, AUC=0.968, elapsed=19.7s
+NPM1 elastic_net candidate 2/3 repeat 1 fold 1 done
+NPM1 elastic_net candidate 2/3 repeat 1 fold 2 done
+NPM1 elastic_net candidate 2/3 repeat 1 fold 3 done
+NPM1 elastic_net candidate 2/3 repeat 1 fold 4 done
+NPM1 elastic_net candidate 2/3 repeat 1 fold 5 done
+NPM1 elastic_net candidate 2/3 repeat 2 fold 1 done
+NPM1 elastic_net candidate 2/3 repeat 2 fold 2 done
+NPM1 elastic_net candidate 2/3 repeat 2 fold 3 done
+NPM1 elastic_net candidate 2/3 repeat 2 fold 4 done
+NPM1 elastic_net candidate 2/3 repeat 2 fold 5 done
+NPM1 elastic_net candidate 2/3 repeat 3 fold 1 done
+NPM1 elastic_net candidate 2/3 repeat 3 fold 2 done
+NPM1 elastic_net candidate 2/3 repeat 3 fold 3 done
+NPM1 elastic_net candidate 2/3 repeat 3 fold 4 done
+NPM1 elastic_net candidate 2/3 repeat 3 fold 5 done
+NPM1 elastic_net {'model__C': 0.05}: AP=0.970, AUC=0.976, elapsed=28.6s
+NPM1 elastic_net candidate 3/3 repeat 1 fold 1 done
+NPM1 elastic_net candidate 3/3 repeat 1 fold 2 done
+NPM1 elastic_net candidate 3/3 repeat 1 fold 3 done
+NPM1 elastic_net candidate 3/3 repeat 1 fold 4 done
+NPM1 elastic_net candidate 3/3 repeat 1 fold 5 done
+NPM1 elastic_net candidate 3/3 repeat 2 fold 1 done
+NPM1 elastic_net candidate 3/3 repeat 2 fold 2 done
+NPM1 elastic_net candidate 3/3 repeat 2 fold 3 done
+NPM1 elastic_net candidate 3/3 repeat 2 fold 4 done
+NPM1 elastic_net candidate 3/3 repeat 2 fold 5 done
+NPM1 elastic_net candidate 3/3 repeat 3 fold 1 done
+NPM1 elastic_net candidate 3/3 repeat 3 fold 2 done
+NPM1 elastic_net candidate 3/3 repeat 3 fold 3 done
+NPM1 elastic_net candidate 3/3 repeat 3 fold 4 done
+NPM1 elastic_net candidate 3/3 repeat 3 fold 5 done
+NPM1 elastic_net {'model__C': 0.2}: AP=0.968, AUC=0.977, elapsed=42.9s
+NPM1 elastic_net top genes:
+      stable_id display_label    weight
+ENSG00000188064         WNT7B  0.327977
+ENSG00000171246         NPTX1  0.260279
+ENSG00000233101      HOXB-AS3  0.202760
+ENSG00000064393         HIPK2  0.137768
+ENSG00000136193         SCRN1 -0.137306
+ENSG00000174059          CD34 -0.126388
+ENSG00000149948         HMGA2 -0.122323
+ENSG00000167081          PBX3  0.113383
+ENSG00000223749      MIR503HG -0.110227
+ENSG00000120093         HOXB3  0.107433
+NPM1 random_forest candidate 1/2 repeat 1 fold 1 done
+NPM1 random_forest candidate 1/2 repeat 1 fold 2 done
+NPM1 random_forest candidate 1/2 repeat 1 fold 3 done
+NPM1 random_forest candidate 1/2 repeat 1 fold 4 done
+NPM1 random_forest candidate 1/2 repeat 1 fold 5 done
+NPM1 random_forest candidate 1/2 repeat 2 fold 1 done
+NPM1 random_forest candidate 1/2 repeat 2 fold 2 done
+NPM1 random_forest candidate 1/2 repeat 2 fold 3 done
+NPM1 random_forest candidate 1/2 repeat 2 fold 4 done
+NPM1 random_forest candidate 1/2 repeat 2 fold 5 done
+NPM1 random_forest candidate 1/2 repeat 3 fold 1 done
+NPM1 random_forest candidate 1/2 repeat 3 fold 2 done
+NPM1 random_forest candidate 1/2 repeat 3 fold 3 done
+NPM1 random_forest candidate 1/2 repeat 3 fold 4 done
+NPM1 random_forest candidate 1/2 repeat 3 fold 5 done
+NPM1 random_forest {'model__min_samples_leaf': 2}: AP=0.963, AUC=0.971, elapsed=14.0s
+NPM1 random_forest candidate 2/2 repeat 1 fold 1 done
+NPM1 random_forest candidate 2/2 repeat 1 fold 2 done
+NPM1 random_forest candidate 2/2 repeat 1 fold 3 done
+NPM1 random_forest candidate 2/2 repeat 1 fold 4 done
+NPM1 random_forest candidate 2/2 repeat 1 fold 5 done
+NPM1 random_forest candidate 2/2 repeat 2 fold 1 done
+NPM1 random_forest candidate 2/2 repeat 2 fold 2 done
+NPM1 random_forest candidate 2/2 repeat 2 fold 3 done
+NPM1 random_forest candidate 2/2 repeat 2 fold 4 done
+NPM1 random_forest candidate 2/2 repeat 2 fold 5 done
+NPM1 random_forest candidate 2/2 repeat 3 fold 1 done
+NPM1 random_forest candidate 2/2 repeat 3 fold 2 done
+NPM1 random_forest candidate 2/2 repeat 3 fold 3 done
+NPM1 random_forest candidate 2/2 repeat 3 fold 4 done
+NPM1 random_forest candidate 2/2 repeat 3 fold 5 done
+NPM1 random_forest {'model__min_samples_leaf': 5}: AP=0.959, AUC=0.970, elapsed=12.7s
+NPM1 random_forest top genes:
+      stable_id display_label   weight
+ENSG00000136944         LMX1B 0.022723
+ENSG00000233101      HOXB-AS3 0.018083
+ENSG00000182742         HOXB4 0.015793
+ENSG00000188064         WNT7B 0.014772
+ENSG00000108511         HOXB6 0.014255
+ENSG00000167081          PBX3 0.012232
+ENSG00000120068         HOXB8 0.011394
+ENSG00000240990     HOXA11-AS 0.011150
+ENSG00000197576         HOXA4 0.010696
+ENSG00000105996         HOXA2 0.010644
+LOCKED selection for NPM1: elastic_net {'model__C': 0.05}
+Development finished. No held-out predictions have been made.

@@ -1,0 +1,63 @@
+External TCGA-LAML validation of frozen BEAT-AML elastic-net classifiers
+  target      N (+/-)                AUROC                AUPRC          sensitivity          specificity                  PPV                  NPV                Brier
+FLT3-ITD 151 (34/117) 0.873 [0.779, 0.948] 0.738 [0.582, 0.888] 0.559 [0.387, 0.722] 0.966 [0.928, 0.992] 0.826 [0.652, 0.962] 0.883 [0.825, 0.935] 0.095 [0.064, 0.130]
+    NPM1 151 (38/113) 0.964 [0.900, 0.998] 0.949 [0.882, 0.996] 0.921 [0.824, 1.000] 0.973 [0.939, 1.000] 0.921 [0.821, 1.000] 0.973 [0.940, 1.000] 0.039 [0.021, 0.062]
+
+Brackets are 95% percentile CIs from 5,000 ordinary patient bootstrap resamples (seed 20260916).
+Threshold fixed at 0.50; AUPRC is noninterpolated average precision. No classifier, gene filter, scaler,
+threshold, calibration or batch correction was fitted or tuned on TCGA.
+
+FLT3-ITD: TP=19, FN=15, TN=113, FP=4.
+NPM1: TP=35, FN=3, TN=110, FP=3.
+
+Interpretation: NPM1 retains strong external discrimination. FLT3-ITD retains useful ranking,
+but the unchanged 0.50 threshold misses 15 of 34 ITD-positive patients (44.1%).
+This sensitivity limitation is retained rather than repaired by tuning on the external cohort.
+Reliability curves are descriptive: five small bins cannot establish precise calibration.
+
+Acquisition and labels:
+151 GDC open-access STAR - Counts files, 151 distinct patients, 60,660 gene rows/file (GENCODE v36).
+Used integer unstranded raw counts, never TPM/FPKM/RSEM. Excluded four STAR summary rows.
+Every file size and GDC MD5 checksum verified. All samples are primary blood-derived cancers.
+Labels: TCGA NEJM 2013 author-curated Table S1, obtained through the GDC publication page.
+The full 200-case matrix contains 39 FLT3-ITD, 17 FLT3 point-mutation and 54 NPM1-mutant cases.
+In the 151 RNA-seq intersection: FLT3-ITD 34 positive/117 negative; NPM1 38 positive/113 negative.
+All 151 have label-source rows; no target is missing. Ten FLT3 point-mutant cases are ITD-negative.
+The RNA-seq ITD fraction is 22.5%; the full paper cohort has 19.5% ITD and 28% combined FLT3 mutations.
+Blank entries in the complete, sequenced author mutation matrix mean no reported mutation;
+this is not a blanket rule that missing clinical data mean negative. Missing patient rows would be dropped.
+FLT3 calls use original in_frame_ins annotations; all 39 are independently concordant with the
+author-released TCGA mutation reannotation. This avoids misleading later MAF consequence labels.
+NPM1 positives exactly agree with cBioPortal laml_tcga. One positive is p.K263R, a noncanonical missense.
+Source: https://gdc.cancer.gov/about-data/publications/laml_2012
+Table S1: https://api.gdc.cancer.gov/data/b9196563-a05d-40b8-80dc-640ec712eb06
+cBioPortal: https://github.com/cBioPortal/datahub/tree/master/public/laml_tcga
+Cross-check: https://github.com/gerstung-lab/AML-multistage/tree/master/data
+
+Gene harmonization and coverage:
+  target  selected_genes  selected_present  selected_absent  selected_gene_coverage  nonzero_coefficient_genes  nonzero_coefficient_present  nonzero_coefficient_absent  absolute_coefficient_weight_coverage  below_90_percent_weight
+FLT3-ITD            5000              4871              129                  0.9742                         93                           89                           4                              0.967828                    False
+    NPM1            5000              4872              128                  0.9744                         88                           86                           2                              0.973209                    False
+
+51,016 input genes expected; 46,973 match and 4,043 are absent by stable Ensembl ID.
+Versions stripped, PAR_Y identities kept distinct; no gene-symbol substitution or GRCh coordinate liftover.
+CPM uses the observed counts in the exact frozen input-gene universe, before selection, as in training.
+Missing input columns have zero placeholders for this library-total calculation. After the frozen
+filter and scaler, every absent selected gene is set to standardized 0, i.e. zero coefficient contribution.
+No missing gene is asserted to be biologically unexpressed. Annotation changes make library totals approximate.
+Matched genes retain 98.22%-99.15% of each TCGA library's gene-assigned counts.
+Both models exceed 90% absolute coefficient-weight coverage. Unavailable genes are fully listed in *_gene_coverage.csv.
+
+Comparison with the original BEAT-AML holdout (descriptive; different populations/prevalences):
+FLT3-ITD: AUROC 0.879 -> 0.873; AUPRC 0.851 -> 0.738; Brier 0.076 -> 0.095.
+NPM1: AUROC 0.999 -> 0.964; AUPRC 0.997 -> 0.949; Brier 0.026 -> 0.039.
+
+NPM1 label-definition sensitivity excluding p.K263R: N=150, positives=37; AUROC=0.990, AUPRC=0.968, Brier=0.033.
+This sensitivity result was not used to alter the primary definition or any prediction.
+
+Limits: only 34/38 positives; intervals are conditional on the frozen model and this cohort.
+STAR reprocessing and BEAT-AML counting differ despite matching count units; annotation, sample source,
+cell composition and cohort shifts can change calibration. CPM is not composition-robust normalization.
+No domain adaptation or recalibration was performed. Missing predictor contributions were neutralized as requested.
+These are external-cohort feasibility estimates, not validation of clinical diagnostic use.
+All BEAT-AML files and model bytes verified unchanged. See protocol, manifests and SHA256 hashes.

@@ -1,0 +1,11 @@
+{
+  "README.md": "2da1a17249c7bf4494a3079f3c3200c3d0d817e8d2fb33802ad19eaa4a7117b5",
+  "audit_results.py": "8a3acf9ebf7d5ef031c2633a38299ddc41a9a31104b733dee8dcdbcde3be656d",
+  "biology_notes.txt": "2087de66b4e4a93aaba0a778a9a3dbc2136301d87fad91a01a3e9cfbce39f7a6",
+  "report.py": "ebbfc838cbe8a19f3b28ccdeeb3cec7f19f859708d0adf8b40adb4320c44b500",
+  "requirements.txt": "c4641f77c3286c9afda2f883e0f1a5fb17f5e7b36ec44454c1642be49e0b142b",
+  "run.py": "7e029a819092c63f572e9a4570de2424ce4b8fe845219860edb96c299cd27363",
+  "test_workflow.py": "3a1ab7a2ab7997efc83a06b84f4e9e46178d12a7ce00db05c1258cea12415045",
+  "workflow.py": "a9758b449ed1478625a4a00d341236f9a3d1ad06c4bda9c6019912c759ba18fa",
+  "xlsx_read.py": "98e30dc0d62f47b2526e40724deaef8a5efdd361d971cc368046ab4fdb3ef3f8"
+}

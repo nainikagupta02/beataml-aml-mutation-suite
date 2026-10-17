@@ -1,0 +1,5 @@
+sample	depmap_id	test	expected
+MV4-11	ACH-000045	FLT3-ITD	positive
+KASUMI-1	ACH-000263	FLT3-ITD	negative
+KASUMI-1	ACH-000263	fusion	RUNX1--RUNX1T1
+NB-4	ACH-000294	fusion	PML--RARA

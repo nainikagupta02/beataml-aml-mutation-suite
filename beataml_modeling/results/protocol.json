@@ -1,0 +1,56 @@
+{
+  "seed": 20260916,
+  "holdout": "first fold of shuffled 5-fold StratifiedGroupKFold",
+  "cv": "5 folds x 3 repetitions of StratifiedGroupKFold",
+  "cv_seeds": [
+    20261016,
+    20261017,
+    20261018
+  ],
+  "selection_metric": "mean validation average precision (AUPRC), ties AUROC then family order",
+  "threshold": 0.5,
+  "normalization": "natural log1p of CPM; own sample library total",
+  "filter": "CPM>=1 in >=10% training rows; variance>0.01; cap 5000 by training variance",
+  "panels": {
+    "FLT3-ITD": [
+      "PRDM16",
+      "IGFBP2",
+      "PTP4A3",
+      "CCNA1",
+      "IL2RA",
+      "SOCS2",
+      "DUSP6"
+    ],
+    "NPM1": [
+      "HOXA9",
+      "HOXA10",
+      "HOXB2",
+      "HOXB3",
+      "HOXB6",
+      "HOXD4",
+      "MEIS1"
+    ]
+  },
+  "panel_sources": {
+    "FLT3-ITD": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4726916/",
+      "https://www.nature.com/articles/s41598-019-45579-0",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3464674/"
+    ],
+    "NPM1": [
+      "https://pubmed.ncbi.nlm.nih.gov/17597811/",
+      "https://ashpublications.org/blood/article/106/12/3747/109726/Mutations-in-nucleophosmin-NPM1-in-acute-myeloid"
+    ]
+  },
+  "nested_cv": false,
+  "MLP": "omitted: optional at modest sample size; no deep-model claim",
+  "versions": {
+    "python": "3.9.13",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.9.4",
+    "joblib": "1.5.3"
+  }
+}

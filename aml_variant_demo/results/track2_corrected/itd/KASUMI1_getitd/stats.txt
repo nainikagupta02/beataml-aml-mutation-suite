@@ -1,0 +1,45 @@
+
+==== PROCESSING SAMPLE KASUMI1 ====
+-- Reading FASTQ files --
+Number of total reads: 551
+Number of total reads > 100bp remaining after N-trimming: 551 (100.0 %)
+Mean read length after N-trimming: 151.0
+Number of total reads with mean BQS >= 30: 63 (11.43 %)
+Number of unique reads with mean BQS >= 30: 58
+Turned OFF unique reads filter!
+Total reads remaining for analysis: 63 (11.43 %)
+
+-- Aligning to Reference --
+Inferring sense from alignment!
+Filtering 54 / 58 low quality alignments with a score < 40.0 % of max
+Turned OFF indel-free primer filter!
+Total reads remaining for analysis: 5 (0.91 %)
+
+-- Looking for insertions & ITDs --
+2 inserts >= 6 bp were found
+0/2 insertions were part of adapters and filtered
+0 ITDs were found
+
+-- Merging insertions --
+2 insertions remain after merging
+2 insertions remain after merging
+2 insertions remain after merging
+2 insertions remain after merging
+
+-- Merging itds --
+0 itds remain after merging
+0 itds remain after merging
+0 itds remain after merging
+0 itds remain after merging
+
+-- Filtering insertions --
+Filtered 2 / 2 insertions based on the number of unique supporting reads
+Filtered 0 / 0 insertions based on the number of total supporting reads
+Filtered 0 / 0 insertions based on the vaf
+0 insertions remain after filtering!
+
+-- Filtering itds --
+Filtered 0 / 0 itds based on the number of unique supporting reads
+Filtered 0 / 0 itds based on the number of total supporting reads
+Filtered 0 / 0 itds based on the vaf
+0 itds remain after filtering!

@@ -1,0 +1,13 @@
+task_id	hash	process	tag	status	exit	start	complete	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar	workdir
+5	e8/ccdc68	SLICE_RNA	NB4	CACHED	0	2026-09-18 21:01:57.491	2026-09-18 21:02:03.306	5.9s	5.8s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/e8/ccdc68a25705d8a88932e8ff295c04
+3	70/7972e8	SLICE_RNA	KASUMI1	CACHED	0	2026-09-18 21:02:03.413	2026-09-18 21:02:12.521	9.2s	9.1s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/70/7972e83d37d5d23c97b2f9816b01ad
+1	e6/43c4f6	PREREGISTER	-	CACHED	0	2026-09-18 21:02:12.631	2026-09-18 21:02:12.764	212ms	65ms	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/e6/43c4f697d6c3d5caedbc0088ed5384
+6	84/4b2b69	FUSION_CANDIDATES	NB4	CACHED	0	2026-09-18 21:02:26.431	2026-09-18 21:03:12.590	46.2s	46.1s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/84/4b2b694fcb29dd36e54f3c54a97e41
+7	bb/72a78f	FUSION_CANDIDATES	KASUMI1	CACHED	0	2026-09-18 21:03:12.695	2026-09-18 21:03:55.380	42.7s	42.6s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/bb/72a78f34ff5b5a7e5be610c76bed83
+2	3a/03bca2	SLICE_DNA	MV411	CACHED	0	2026-09-18 21:02:19.913	2026-09-18 21:02:26.323	6.5s	6.4s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/3a/03bca238a8e4a546b089fba89cbd17
+4	7c/f99e81	SLICE_DNA	KASUMI1	CACHED	0	2026-09-18 21:02:12.873	2026-09-18 21:02:19.808	7s	6.9s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/7c/f99e8121c492d5b0553be66e54c8b3
+9	eb/fe4eca	PIZZLY_FILTER	KASUMI1	CACHED	0	2026-09-18 21:05:06.483	2026-09-18 21:06:00.564	54.2s	54s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/eb/fe4eca09876a52ac12916197d59942
+8	0d/982b21	PIZZLY_FILTER	NB4	CACHED	0	2026-09-18 21:04:12.898	2026-09-18 21:05:06.378	53.6s	53.4s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/0d/982b21a658375fbb3c4d14cf1d750c
+11	83/35471a	CALL_ITD	KASUMI1	CACHED	0	2026-09-18 21:03:55.486	2026-09-18 21:04:02.583	7.2s	7s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/83/35471a639c01f075718dd585f23cb5
+10	a0/c66ceb	CALL_ITD	MV411	CACHED	0	2026-09-18 21:04:02.688	2026-09-18 21:04:12.794	10.2s	10.1s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/a0/c66ceb01e85eb7f17aa3bed55541d0
+12	c6/45dc1d	REPORT_TRACK2	-	COMPLETED	0	2026-09-18 21:12:33.277	2026-09-18 21:12:33.604	445ms	185ms	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/c6/45dc1dceb00957dbf4810afeab9ef3

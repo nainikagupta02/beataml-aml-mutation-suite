@@ -1,0 +1,7 @@
+stable_id,display_label,description,biotype,weight,importance_type,absolute_weight,literature_panel_member
+ENSG00000253293,HOXA10,homeobox A10 [Source:HGNC Symbol;Acc:5100],protein_coding,3.0119148740857193,standardized_log_odds_coefficient,3.0119148740857193,True
+ENSG00000078399,HOXA9,homeobox A9 [Source:HGNC Symbol;Acc:5109],protein_coding,-2.229177200627034,standardized_log_odds_coefficient,2.229177200627034,True
+ENSG00000143995,MEIS1,Meis homeobox 1 [Source:HGNC Symbol;Acc:7000],protein_coding,1.9065154797717383,standardized_log_odds_coefficient,1.9065154797717383,True
+ENSG00000120093,HOXB3,homeobox B3 [Source:HGNC Symbol;Acc:5114],protein_coding,1.1384939453977363,standardized_log_odds_coefficient,1.1384939453977363,True
+ENSG00000108511,HOXB6,homeobox B6 [Source:HGNC Symbol;Acc:5117],protein_coding,0.9143631687649482,standardized_log_odds_coefficient,0.9143631687649482,True
+ENSG00000173917,HOXB2,homeobox B2 [Source:HGNC Symbol;Acc:5113],protein_coding,-0.3141206350963763,standardized_log_odds_coefficient,0.3141206350963763,True

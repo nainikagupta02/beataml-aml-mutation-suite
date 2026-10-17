@@ -1,0 +1,6 @@
+Track 2 known-positive recovery (not a sensitivity/specificity validation)
+MV4-11 FLT3-ITD: expected positive, observed positive [PASS]; evidence 6
+KASUMI-1 FLT3-ITD: expected negative, observed negative [PASS]; evidence see fields
+KASUMI-1 RUNX1--RUNX1T1: expected positive, observed junction evidence [PARTIAL]; evidence kallisto split=132;pair=105;pizzly=0
+NB-4 PML--RARA: expected positive, observed junction evidence [PARTIAL]; evidence kallisto split=35;pair=43;pizzly=0
+Fusion cells are PARTIAL: expected junction candidates were recovered, but pizzly promoted zero candidates. This is weaker evidence, not a fusion call.

@@ -1,0 +1,3 @@
+target,selected_genes,selected_present,selected_absent,selected_gene_coverage,nonzero_coefficient_genes,nonzero_coefficient_present,nonzero_coefficient_absent,absolute_coefficient_weight_coverage,below_90_percent_weight
+FLT3-ITD,5000,4871,129,0.9742,93,89,4,0.9678280353546143,False
+NPM1,5000,4872,128,0.9744,88,86,2,0.9732092618942261,False

@@ -1,0 +1,16 @@
+{
+  "target": "NPM1",
+  "model": "pytorch_mlp",
+  "n": 89,
+  "AUROC": 1.0,
+  "AUPRC": 1.0,
+  "sensitivity": 1.0,
+  "specificity": 0.96875,
+  "PPV": 0.9259259259259259,
+  "NPV": 1.0,
+  "Brier": 0.012597342749796549,
+  "TN": 62,
+  "FP": 2,
+  "FN": 0,
+  "TP": 25
+}

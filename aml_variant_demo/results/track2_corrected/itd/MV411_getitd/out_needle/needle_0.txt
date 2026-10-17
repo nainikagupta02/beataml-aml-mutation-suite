@@ -1,0 +1,66 @@
+########################################
+# Program: Biopython
+# Rundate: 2026-09-18 21:04:18
+# Commandline: bio.align.globalcs(
+#    read.seq,
+#    REF,
+#    get_alignment_score,
+#    -36,
+#    -0.5)
+# Align_format: srspair
+# Report_file: needle_0.txt
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# Sample: AAACAGGAGTCTCAATCCAGGTTGCCGTCAAAATGCTGAAAGGTACAGTATAGTGGAAGGACAGCAACAAAGATGCCCAAAAATGGGAGGCACAGTTTCCC
+# Reference: gcaatttaggtatgaaagccagctacagatggtacaggtgaccggctcctcagataatgagtacttctacgttgatttcagagaatatgaatatgatctcaaatgggagtttccaagagaaaatttagagtttggtaagaatggaatgtgccaaatgtttctgcagcatttcttttccattggaaaatctttaaaatgcacgtactcaccatttgtctttgcagggaaggtactaggatcaggtgcttttggaaaagtgatgaacgcaacagcttatggaattagcaaaacaggagtctcaatccaggttgccgtcaaaatgctgaaagg
+# Matrix: EDNAFULL
+# Gap_penalty: -36
+# Extend_penalty: -0.5
+#
+# Length: 388
+# Identity:     43/388 (11.1%)
+# Similarity:   43/388 (11.1%)
+# Gaps:         345/388 (88.9%)
+# Score: 215.0
+#
+#
+#=======================================
+
+                    0 --------------------------------------------------      0
+                                                                        
+                    1 GCAATTTAGGTATGAAAGCCAGCTACAGATGGTACAGGTGACCGGCTCCT     50
+
+                    0 --------------------------------------------------      0
+                                                                        
+                   51 CAGATAATGAGTACTTCTACGTTGATTTCAGAGAATATGAATATGATCTC    100
+
+                    0 --------------------------------------------------      0
+                                                                        
+                  101 AAATGGGAGTTTCCAAGAGAAAATTTAGAGTTTGGTAAGAATGGAATGTG    150
+
+                    0 --------------------------------------------------      0
+                                                                        
+                  151 CCAAATGTTTCTGCAGCATTTCTTTTCCATTGGAAAATCTTTAAAATGCA    200
+
+                    0 --------------------------------------------------      0
+                                                                        
+                  201 CGTACTCACCATTTGTCTTTGCAGGGAAGGTACTAGGATCAGGTGCTTTT    250
+
+                    1 -------------------------------------AAACAGGAGTCTC     13
+                                                           |||||||||||||
+                  251 GGAAAAGTGATGAACGCAACAGCTTATGGAATTAGCAAAACAGGAGTCTC    300
+
+                   14 AATCCAGGTTGCCGTCAAAATGCTGAAAGGTACAGTATAGTGGAAGGACA     63
+                      ||||||||||||||||||||||||||||||                    
+                  301 AATCCAGGTTGCCGTCAAAATGCTGAAAGG--------------------    330
+
+                   64 GCAACAAAGATGCCCAAAAATGGGAGGCACAGTTTCCC    101
+                                                            
+                  330 --------------------------------------    330
+
+
+#---------------------------------------
+#---------------------------------------
