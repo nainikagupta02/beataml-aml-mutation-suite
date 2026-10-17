@@ -24,10 +24,9 @@ and reproduction commands — start there; this file is just a map.
   models (Dockerized, verified end-to-end against real TCGA samples), and
   Terraform (not applied) to deploy that API on AWS App Runner.
 - **[`aml_variant_demo/`](aml_variant_demo/)** — A separate, laptop-scale
-  Nextflow pipeline: Track 1 validates a Mutect2 tumor-normal WES SNV/indel
-  workflow against the SEQC2 HCC1395 truth set; Track 2 recovers known AML
-  cell-line events (FLT3-ITD, RUNX1-RUNX1T1, PML-RARA) with a preregistered
-  negative control, using samtools, getITD, kallisto and Pizzly.
+  Nextflow pipeline recovering known AML cell-line events (FLT3-ITD,
+  RUNX1-RUNX1T1, PML-RARA) with a preregistered negative control, using
+  samtools, getITD, kallisto and Pizzly.
 
 ## What's excluded here
 

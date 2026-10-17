@@ -1,7 +1,0 @@
-task_id	hash	process	tag	status	exit	submit	start	complete	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar	workdir
-1	6b/1174d6	FETCH_RESOURCES	SEQC2 + GENCODE v50 + IMPACT468 + GRCh38.d1.vd1	CACHED	0	2026-09-16 21:50:57.925	2026-09-16 21:50:58.234	2026-09-16 21:53:40.409	2m 42s	2m 40s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/6b/1174d6d3509e86a130a25a2230bc4b
-2	92/a924f5	BUILD_VALIDATION_REGIONS	truth-count gate	COMPLETED	0	2026-09-16 22:19:34.891	2026-09-16 22:19:35.004	2026-09-16 22:20:15.749	40.9s	39.5s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/92/a924f5394b03d4ad2bce83496bae87
-3	fc/72db50	SLICE_REMOTE_BAMS	WES_LL_T_1 + WES_LL_N_1	COMPLETED	0	2026-09-16 22:20:15.869	2026-09-16 22:20:15.959	2026-09-16 22:22:50.364	2m 34s	2m 33s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/fc/72db500029e62fbe8588275c9a701a
-4	c8/754822	MUTECT2_CALL	HCC1395 tumor-normal	COMPLETED	0	2026-09-16 22:22:50.463	2026-09-16 22:22:50.574	2026-09-16 23:23:42.647	1h 52s	1h 51s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/c8/754822c58eb16b49ee403c4f85c063
-5	f8/8c362f	FILTER_CALLS	FilterMutectCalls + exact BED	COMPLETED	0	2026-09-16 23:23:42.761	2026-09-16 23:23:42.867	2026-09-16 23:23:55.529	12.8s	11.4s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/f8/8c362fee3f959056b121134cbd47f0
-6	0f/1f128d	BENCHMARK_CALLS	bcftools isec SNV + indel	COMPLETED	0	2026-09-16 23:23:55.567	2026-09-16 23:23:55.630	2026-09-16 23:23:58.325	2.8s	1.7s	-	-	-	-	-	/Users/nyu/Downloads/aml_variant_demo/work/0f/1f128d7235e27888129ec98e47b5da

@@ -1,3 +1,0 @@
-type	count
-SNV	988
-INDEL	48

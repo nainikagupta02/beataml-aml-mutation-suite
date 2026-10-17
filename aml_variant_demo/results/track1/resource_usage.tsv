@@ -1,8 +1,0 @@
-process	runtime	peak_ram_mib	workdir_disk	note
-FETCH_RESOURCES	2m 40s	777.6	3.9G	Peak is the measured highest-memory reference-preparation command; macOS Nextflow does not expose task RSS without a container engine.
-BUILD_VALIDATION_REGIONS	39.5s	836.9	20M	Deterministic replay against cached inputs under /usr/bin/time -l.
-SLICE_REMOTE_BAMS	2m 33s	32.0	4.4G	RSS sampled every 0.5 seconds from the local process table.
-MUTECT2_CALL	1h 51s	1019.3	2.0M	RSS sampled every 0.5 seconds; disk excludes symlinked BAM inputs.
-FILTER_CALLS	11.4s	657.3	848K	RSS sampled every 0.5 seconds.
-BENCHMARK_CALLS	1.7s	26.2	3.5M	RSS sampled every 0.5 seconds.
-
